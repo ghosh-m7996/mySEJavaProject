@@ -1,0 +1,46 @@
+class Restaurant
+{
+    public static void displayOptions()
+    {
+        System.out.println("Restaurant List:");
+        System.out.println();
+        System.out.println("Triple O");
+        System.out.println("Tim Hortons");
+        System.out.println("Salad Bar");
+        System.out.println("Sandwich Bar");
+    }
+
+    //choice is a string type data coming from the choice made by the user
+    //availability is an associative array coming from the backend of the system where the restaurant availability is updated on
+    //a daily basis to indicate the open restaurants for that day
+    //availability is part of the global variables in the package for the app
+    //a simple representation of how restaurant availability can be checked
+    //this would need many more parameters once it is connected to the actual system
+
+    public static boolean isAvailable(String choice)
+    {
+        if(choice == "Triple O")
+        {
+            if(availability['Triple O's] == true)
+                return true;
+        }
+
+        if(choice == "Tim Hortons")
+        {
+            if(availability['Tim Hortons'] == true)
+                return true;
+        }
+
+        if(choice == "Salad Bar")
+        {
+            if(availability['Salad Bar'] == true)
+                return true;
+        }
+
+        if(choice == "Sandwich Bar")
+        {
+            if(availability['Sandwich Bar'] == true)
+                return true;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+class App
+{
+    public static void main(String args[])
+    {
+        Restaurant res = new Restaurant();
+        System.out.println("Choose your restaurant:");
+        res.displayOptions();
+
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Enter restaurant name:");
+
+        String choice = myObj.nextLine();
+        boolean available = res.isAvailable(choice);
+
+        if(available == true)
+            //display the menu item options for the selected restaurant
+        else
+            System.out.println("Please choose another restaurant!");
+    }
+}
